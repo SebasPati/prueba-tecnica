@@ -1,6 +1,6 @@
 function minimum_change(array){
     let ordenado = array.sort(function(a, b){return a-b})
-    let combinaciones = ordenado.reduce((a,v) => a.concat(a.map(d => [v].concat(d))),[[]])
+    let combinaciones = ordenado.reduce((accum,valor) => accum.concat(accum.map(x => [valor].concat(x))),[[]])
     let comb = []
     for (let i = 0; i < combinaciones.length; i++) {
         let total = combinaciones[i].reduce((a,b) => a + b, 0)
