@@ -3,10 +3,9 @@ function Order_squares(array){
     for (let i = 0; i < array.length; i++) {
         array[i] = Math.pow(array[i],2)
     }
-    let dataLen = array.length;
-    for(let i=0; i < dataLen; i++){
-        for(let j=0; j < dataLen; j++){
-            if(j+1 !== dataLen){
+    for(let i=0; i < array.length; i++){
+        for(let j=0; j < array.length; j++){
+            if(j+1 !== array.length){
                 if(array[j] > array[j+1]){
                     let intercambio = array[j+1];
                     array[j+1] = array[j];
