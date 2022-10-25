@@ -5,8 +5,7 @@ const S = 8
 for (let i = prueba.length-1; i >= 0; i--) {
     prueba_inv.push(prueba[i])
 }
-const long = prueba_inv.length
-for (let i = 0; i < long; i++) {
+for (let i = 0; i < prueba_inv.length; i++) {
     if(prueba_inv[i].toString().length > 1){
         let dividido = prueba_inv[i].toString().split("")
         var numero = ""
