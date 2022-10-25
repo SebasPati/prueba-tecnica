@@ -1,4 +1,4 @@
-var prueba = [88,6,5,4,3,2,7,7,29,1]
+var prueba = [88,8,6,5,4,3,2,7,7,29,1]
 var prueba_inv = []
 var resultado = []
 const S = 8
@@ -21,5 +21,5 @@ for (let i = 0; i < long; i++) {
         resultado.push(prueba_inv[i])
     }
 }
-let final = resultado.filter(res => !isNaN(res))
-console.log(final);
+resultado = resultado.filter(res => !isNaN(res))
+console.log(resultado);
