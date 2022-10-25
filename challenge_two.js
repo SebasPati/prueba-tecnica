@@ -1,6 +1,5 @@
 function Order_squares(array){
     var limit = 88
-    var newArray = []
     for (let i = 0; i < array.length; i++) {
         array[i] = Math.pow(array[i],2)
     }
@@ -19,4 +18,4 @@ function Order_squares(array){
     let resultado = array.filter(element => element < limit)
     return resultado
 }
-console.log("squares sorted in ascending order",Order_squares([1,2,3,4,5,8,9,10]));
+console.log("squares sorted in ascending order",Order_squares([-8,-7,0,7,8]));
